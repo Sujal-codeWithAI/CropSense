@@ -1,0 +1,23 @@
+crop,description,temperature_range,humidity_range,ph_range,rainfall_range,season,growth_days,water_requirement,fertilizer,profitability,ideal_n,ideal_p,ideal_k,market_demand
+apple,Temperate fruit crop valued for fresh and processed markets,15-30°C,50-70%,5.5-7.0,700-1500 mm,Autumn,120-180,Medium,Potassium rich,High,80,50,90,High
+banana,Tropical fruit crop with high water demand,20-35°C,75-90%,5.5-7.0,1200-2200 mm,Perennial,240-300,High,High potassium,High,120,50,120,Very High
+blackgram,Short-duration legume crop with low water needs,20-35°C,40-60%,6.0-7.5,400-800 mm,Kharif,70-90,Medium,Phosphorus rich,Medium,60,50,40,Moderate
+chickpea,Dryland pulse crop rich in protein,20-30°C,40-60%,6.0-8.0,350-650 mm,Rabi,90-110,Low,Phosphorus rich,Medium,70,55,45,Moderate
+coconut,Tropical perennial crop for oil and fiber,24-32°C,70-90%,5.0-8.0,1500-2500 mm,Perennial,365-540,High,NPK balanced,High,140,50,140,High
+coffee,Tropical crop grown for beans,15-28°C,70-90%,5.0-6.5,1500-2500 mm,Winter,180-240,High,NPK balanced,High,90,40,40,Strong
+cotton,Fiber crop for textile industry,21-30°C,50-80%,5.8-8.0,700-1300 mm,Kharif,150-180,Medium,NPK balanced,High,80,50,40,Moderate
+grapes,High-value fruit crop for table and wine,15-30°C,60-80%,6.0-8.0,600-900 mm,Winter,120-160,Medium,Potassium rich,High,75,45,90,High
+jute,Green fiber crop for rope and fabric,20-30°C,75-95%,5.5-7.0,1200-1800 mm,Kharif,100-140,High,NPK balanced,Medium,90,55,35,Moderate
+kidneybeans,Nutrient-rich pulse crop,18-30°C,40-60%,6.0-7.5,500-900 mm,Rabi,90-110,Medium,Phosphorus rich,Medium,70,60,60,Moderate
+lentil,Cool-season pulse crop with nitrogen-fixing roots,15-25°C,40-60%,6.0-7.5,400-750 mm,Rabi,90-110,Low,Nitrogen fixer,Medium,60,50,40,Stable
+maize,Versatile cereal crop,18-30°C,50-70%,5.5-7.5,600-1200 mm,Kharif,90-120,Medium,Nitrogen rich,High,100,50,50,High
+mango,Tropical tree crop with strong market demand,24-34°C,50-80%,5.5-7.5,900-1200 mm,Summer,150-180,Medium,Potassium rich,High,90,40,80,Very High
+mothbeans,Drought-tolerant pulse crop,25-35°C,30-40%,6.0-8.0,200-500 mm,Summer,80-100,Low,Drought tolerant,Medium,40,20,30,Moderate
+mungbean,Short-duration legume for quick harvest,25-35°C,50-70%,6.0-7.5,400-700 mm,Kharif,60-80,Low,Phosphorus rich,Medium,50,55,45,Stable
+muskmelon,Melon crop with fast growth and good demand,22-32°C,50-70%,6.0-7.5,400-700 mm,Summer,70-90,Medium,Potassium rich,High,70,50,80,High
+orange,Citrus fruit crop with strong market value,15-30°C,60-80%,5.5-6.5,1000-1500 mm,Winter,180-240,Medium,Potassium rich,High,80,50,90,High
+papaya,Fast-growing tropical fruit crop,22-30°C,60-80%,5.5-6.5,1000-1500 mm,Tropical,180-240,High,Nitrogen rich,High,100,50,60,High
+pigeonpeas,Long-duration pulse crop,20-35°C,40-60%,6.0-7.5,500-900 mm,Kharif,120-150,Medium,Phosphorus rich,Medium,70,60,40,Moderate
+pomegranate,Drought-tolerant fruit crop with high value,20-35°C,40-70%,5.5-7.0,400-650 mm,Summer,120-150,Low,Potassium rich,High,60,40,80,High
+rice,Staple food crop grown in waterlogged fields,20-35°C,80-100%,5.0-7.0,1000-2000 mm,Kharif,120-150,High,High Nitrogen,High,120,60,40,Very High
+watermelon,Refreshing vine crop for summer markets,22-30°C,50-70%,6.0-7.5,300-600 mm,Summer,80-100,Medium,Potassium rich,High,60,50,90,High

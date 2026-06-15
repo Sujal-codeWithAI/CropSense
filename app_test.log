@@ -1,0 +1,73 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 914-155-137
+127.0.0.1 - - [27/Mar/2026 12:26:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:26:42] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:26:42] "GET /static/css/crop.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:26:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [27/Mar/2026 12:30:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:30:02] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:30:02] "GET /static/images/crop.jpg HTTP/1.1" 200 -
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 12:32:52] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:32:52] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 12:32:52] "GET /static/images/crop.jpg HTTP/1.1" 304 -
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 12:33:29] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:33:29] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 12:33:29] "GET /static/images/crop.jpg HTTP/1.1" 304 -
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 12:34:48] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:34:48] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 12:34:48] "GET /static/images/crop.jpg HTTP/1.1" 304 -
+ * Detected change in 'c:\\Users\\rauts\\OneDrive\\Desktop\\crop-prediction-model-main\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 914-155-137
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 12:38:42] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:38:42] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 12:38:42] "GET /static/images/crop.jpg HTTP/1.1" 304 -
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 12:38:44] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:38:44] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 12:38:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 12:38:50] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 12:38:50] "GET /static/images/crop.jpg HTTP/1.1" 304 -
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 13:06:48] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 13:06:48] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 13:06:48] "GET /static/images/crop.jpg HTTP/1.1" 304 -
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 13:09:40] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 13:09:40] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 13:09:40] "GET /static/images/crop.jpg HTTP/1.1" 304 -
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 13:10:08] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 13:10:08] "GET /static/css/style.css HTTP/1.1" 304 -
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 13:15:10] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 13:15:10] "GET /static/css/style.css HTTP/1.1" 304 -
+ * Detected change in 'c:\\Users\\rauts\\OneDrive\\Desktop\\crop-prediction-model-main\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 914-155-137
+C:\Users\rauts\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py:2691: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+127.0.0.1 - - [27/Mar/2026 13:16:46] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 13:16:46] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 13:16:46] "GET /static/images/crop.jpg HTTP/1.1" 304 -

@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crop Recommendation System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-d0eH3Z7fQtJ1z6aAye4n+ooK1J9r+bG2Pk4+VL7YH4T2D6/a5ozeVqZfMWaVVY6t" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-MaB+7QJ5okv1Vh/1Uw+a/3T0Lj1un3KzLvZbZmye1ufnBi3GnW5TxmH6Vjz7zGGp9YtW1gOKKT9Nf6V0VlH5hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=5"/>
+</head>
+<body>
+
+  <div class="bg-overlay"></div>
+
+  <div class="page-wrapper container py-5">
+
+    <header class="header text-center mb-4">
+      <div class="logo">🌾 Crop Recommendation System</div>
+      <p class="tagline">AI-Powered Crop Recommendation</p>
+    </header>
+
+    <main class="card">
+      <div class="card-header">
+        <h2>Soil & Climate Analysis</h2>
+        <p>Enter your field conditions for a tailored crop insight dashboard.</p>
+      </div>
+
+      <form action="{{ url_for('index') }}" method="post" class="form">
+
+        {% if error %}
+        <div class="inline-error">
+          <span>⚠️</span> {{ error }}
+        </div>
+        {% endif %}
+
+        <div class="section-label">🧪 Soil Nutrients (NPK Ratio)</div>
+        <div class="input-grid input-grid-4">
+          <div class="input-group">
+            <label for="N">Nitrogen (N)</label>
+            <div class="input-wrap">
+              <span class="unit">mg/kg</span>
+              <input type="number" id="N" name="N" placeholder="e.g. 90" min="0" required value="{{ features['N'] if features is defined else '' }}" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="P">Phosphorus (P)</label>
+            <div class="input-wrap">
+              <span class="unit">mg/kg</span>
+              <input type="number" id="P" name="P" placeholder="e.g. 40" min="0" required value="{{ features['P'] if features is defined else '' }}" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="K">Potassium (K)</label>
+            <div class="input-wrap">
+              <span class="unit">mg/kg</span>
+              <input type="number" id="K" name="K" placeholder="e.g. 40" min="0" required value="{{ features['K'] if features is defined else '' }}" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="region">📍 Region</label>
+            <div class="custom-select-wrap">
+              <button type="button" class="custom-select-btn" id="regionBtn" aria-haspopup="listbox" aria-expanded="false">
+                <span class="custom-select-value" id="regionDisplay">Select Region</span>
+                <svg class="custom-select-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M1 1l5 5 5-5" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <ul class="custom-select-list" id="regionList" role="listbox">
+                {% for r in regions %}
+                <li class="custom-select-option" role="option" data-value="{{ r }}">{{ r }}</li>
+                {% endfor %}
+              </ul>
+              <input type="hidden" id="region" name="region" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="section-label">🌡️ Climate Conditions</div>
+        <div class="input-grid">
+          <div class="input-group">
+            <label for="temperature">Temperature</label>
+            <div class="input-wrap">
+              <span class="unit">°C</span>
+              <input type="number" id="temperature" name="temperature" placeholder="e.g. 25" step="0.1" required value="{{ features['temperature'] if features is defined else '' }}" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="humidity">Humidity</label>
+            <div class="input-wrap">
+              <span class="unit">%</span>
+              <input type="number" id="humidity" name="humidity" placeholder="e.g. 80" step="0.1" required value="{{ features['humidity'] if features is defined else '' }}" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="rainfall">Rainfall</label>
+            <div class="input-wrap">
+              <span class="unit">mm</span>
+              <input type="number" id="rainfall" name="rainfall" placeholder="e.g. 200" step="0.1" required value="{{ features['rainfall'] if features is defined else '' }}" />
+            </div>
+          </div>
+        </div>
+
+        <div class="section-label">🧬 Soil Chemistry</div>
+        <div class="input-grid">
+          <div class="input-group">
+            <label for="ph">pH Value</label>
+            <div class="input-wrap">
+              <span class="unit">pH</span>
+              <input type="number" id="ph" name="ph" placeholder="e.g. 6.5" step="0.1" min="0" max="14" required value="{{ features['ph'] if features is defined else '' }}" />
+            </div>
+            <div class="ph-scale">
+              <span>0 Acidic</span>
+              <div class="ph-bar"></div>
+              <span>14 Alkaline</span>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="soil_moisture">Soil Moisture</label>
+            <div class="input-wrap">
+              <span class="unit">%</span>
+              <input type="number" id="soil_moisture" name="soil_moisture" placeholder="e.g. 35" step="0.1" min="0" max="100" required value="{{ features['soil_moisture'] if features is defined else '' }}" />
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="predict-btn">
+          <span>🔍 Predict Best Crop</span>
+        </button>
+      </form>
+    </main>
+
+    <footer class="footer mt-4">
+      <p>Powered by Logistic Regression · Trained on 2200+ soil samples</p>
+    </footer>
+
+  </div>
+
+<script>
+  (function () {
+    const btn     = document.getElementById('regionBtn');
+    const list    = document.getElementById('regionList');
+    const display = document.getElementById('regionDisplay');
+    const hidden  = document.getElementById('region');
+
+    // Move list to <body> so it is never inside any stacking context
+    document.body.appendChild(list);
+
+    function positionList() {
+      const rect = btn.getBoundingClientRect();
+      list.style.top   = (rect.bottom + window.scrollY + 6) + 'px';
+      list.style.left  = (rect.left  + window.scrollX) + 'px';
+      list.style.width = rect.width + 'px';
+    }
+
+    function open() {
+      positionList();
+      list.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+      btn.querySelector('.custom-select-arrow').style.transform = 'rotate(180deg)';
+    }
+    function close() {
+      list.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.querySelector('.custom-select-arrow').style.transform = 'rotate(0deg)';
+    }
+    function toggle() { list.classList.contains('open') ? close() : open(); }
+
+    btn.addEventListener('click', function (e) { e.stopPropagation(); toggle(); });
+
+    list.querySelectorAll('.custom-select-option').forEach(function (opt) {
+      opt.addEventListener('click', function () {
+        display.textContent = this.dataset.value;
+        display.classList.add('selected');
+        hidden.value = this.dataset.value;
+        list.querySelectorAll('.custom-select-option').forEach(function (o) { o.classList.remove('active'); });
+        this.classList.add('active');
+        close();
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!btn.contains(e.target) && !list.contains(e.target)) close();
+    });
+
+    window.addEventListener('scroll', function () { if (list.classList.contains('open')) positionList(); }, true);
+    window.addEventListener('resize', function () { if (list.classList.contains('open')) positionList(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  })();
+</script>
+</body>
+</html>

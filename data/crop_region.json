@@ -1,0 +1,68 @@
+{
+  "rice":        ["Andhra Pradesh", "Assam", "Bihar", "Chhattisgarh", "Jharkhand",
+                  "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur",
+                  "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab",
+                  "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "West Bengal"],
+
+  "maize":       ["Andhra Pradesh", "Bihar", "Gujarat", "Haryana", "Himachal Pradesh",
+                  "Karnataka", "Madhya Pradesh", "Maharashtra", "Punjab", "Rajasthan",
+                  "Telangana", "Uttar Pradesh"],
+
+  "chickpea":    ["Gujarat", "Haryana", "Madhya Pradesh", "Maharashtra", "Punjab",
+                  "Rajasthan", "Uttar Pradesh"],
+
+  "kidneybeans": ["Bihar", "Himachal Pradesh", "Jharkhand", "Maharashtra",
+                  "Punjab", "Uttarakhand", "Uttar Pradesh"],
+
+  "pigeonpeas":  ["Andhra Pradesh", "Bihar", "Gujarat", "Karnataka", "Madhya Pradesh",
+                  "Maharashtra", "Odisha", "Telangana", "Uttar Pradesh"],
+
+  "mothbeans":   ["Gujarat", "Maharashtra", "Rajasthan"],
+
+  "mungbean":    ["Bihar", "Gujarat", "Haryana", "Maharashtra", "Odisha",
+                  "Rajasthan", "Uttar Pradesh", "West Bengal"],
+
+  "blackgram":   ["Andhra Pradesh", "Bihar", "Karnataka", "Maharashtra",
+                  "Tamil Nadu", "Telangana", "Uttar Pradesh", "West Bengal"],
+
+  "lentil":      ["Bihar", "Madhya Pradesh", "Punjab", "Rajasthan",
+                  "Uttar Pradesh", "West Bengal"],
+
+  "pomegranate": ["Gujarat", "Karnataka", "Maharashtra", "Rajasthan", "Tamil Nadu"],
+
+  "banana":      ["Andhra Pradesh", "Gujarat", "Karnataka", "Kerala",
+                  "Maharashtra", "Tamil Nadu", "Telangana", "West Bengal"],
+
+  "mango":       ["Andhra Pradesh", "Bihar", "Gujarat", "Karnataka", "Kerala",
+                  "Maharashtra", "Odisha", "Tamil Nadu", "Telangana",
+                  "Uttar Pradesh", "West Bengal"],
+
+  "grapes":      ["Karnataka", "Maharashtra", "Tamil Nadu", "Telangana"],
+
+  "watermelon":  ["Gujarat", "Karnataka", "Maharashtra", "Rajasthan",
+                  "Tamil Nadu", "Uttar Pradesh"],
+
+  "muskmelon":   ["Gujarat", "Haryana", "Maharashtra", "Punjab",
+                  "Rajasthan", "Uttar Pradesh"],
+
+  "apple":       ["Himachal Pradesh", "Jammu and Kashmir", "Punjab",
+                  "Uttarakhand"],
+
+  "orange":      ["Assam", "Karnataka", "Maharashtra", "Meghalaya",
+                  "Punjab", "Tamil Nadu"],
+
+  "papaya":      ["Andhra Pradesh", "Gujarat", "Karnataka", "Maharashtra",
+                  "Tamil Nadu", "Telangana", "West Bengal"],
+
+  "coconut":     ["Andhra Pradesh", "Goa", "Karnataka", "Kerala",
+                  "Maharashtra", "Odisha", "Tamil Nadu", "West Bengal"],
+
+  "cotton":      ["Andhra Pradesh", "Gujarat", "Haryana", "Karnataka",
+                  "Madhya Pradesh", "Maharashtra", "Punjab",
+                  "Rajasthan", "Telangana"],
+
+  "jute":        ["Assam", "Bihar", "Meghalaya", "Odisha",
+                  "Tripura", "Uttar Pradesh", "West Bengal"],
+
+  "coffee":      ["Karnataka", "Kerala", "Tamil Nadu"]
+}

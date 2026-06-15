@@ -1,0 +1,89 @@
+{
+  "rice":        [["Chlorpyrifos",       "Stem borer & leaf folder control",       "Apply 2.5 ml/L during tillering stage"],
+                  ["Carbendazim",        "Blast & sheath blight fungicide",        "Spray 1 g/L at booting stage"],
+                  ["Propiconazole",      "Brown spot & sheath rot control",        "Apply 1 ml/L at flag leaf stage"]],
+
+  "maize":       [["Lambda-cyhalothrin", "Fall armyworm control",                  "Spray 1 ml/L at early infestation"],
+                  ["Atrazine",           "Pre-emergence weed control",             "Apply 1.5 kg/ha before germination"],
+                  ["Mancozeb",           "Turcicum blight fungicide",              "Spray 2.5 g/L every 10 days"]],
+
+  "chickpea":    [["Imidacloprid",       "Pod borer & aphid control",              "Seed treatment 5 ml/kg seed"],
+                  ["Trifluralin",        "Pre-emergence weed control",             "Apply 1 L/ha before sowing"],
+                  ["Hexaconazole",       "Wilt & root rot fungicide",              "Drench 2 ml/L near root zone"]],
+
+  "kidneybeans": [["Dimethoate",         "Aphid & whitefly control",               "Spray 2 ml/L at flowering"],
+                  ["Chlorothalonil",     "Angular leaf spot fungicide",            "Apply 2 g/L every 14 days"],
+                  ["Pendimethalin",      "Pre-emergence weed control",             "Apply 1 L/ha before germination"]],
+
+  "pigeonpeas":  [["Quinalphos",         "Pod fly & pod borer control",            "Spray 2 ml/L at pod formation"],
+                  ["Carbendazim",        "Wilt & sterility mosaic control",        "Seed treatment 2 g/kg seed"],
+                  ["Glyphosate",         "Post-emergence weed control",            "Apply 1.5 L/ha before crop emergence"]],
+
+  "mothbeans":   [["Malathion",          "Aphid & jassid control",                 "Spray 2 ml/L at vegetative stage"],
+                  ["Thiram",             "Seed rot & damping-off control",         "Seed treatment 3 g/kg seed"],
+                  ["Pendimethalin",      "Weed control",                           "Apply 1 L/ha pre-emergence"]],
+
+  "mungbean":    [["Cypermethrin",       "Thrips & pod borer control",             "Spray 1 ml/L at flowering"],
+                  ["Metalaxyl",          "Powdery mildew fungicide",               "Apply 2 g/L at first sign"],
+                  ["Imazethapyr",        "Broad-leaf weed control",                "Apply 750 ml/ha post-emergence"]],
+
+  "blackgram":   [["Thiamethoxam",       "Whitefly & yellow mosaic control",       "Seed treatment 3 g/kg seed"],
+                  ["Mancozeb",           "Leaf spot fungicide",                    "Spray 2.5 g/L every 10 days"],
+                  ["Quizalofop",         "Grass weed control",                     "Apply 1 L/ha post-emergence"]],
+
+  "lentil":      [["Imidacloprid",       "Aphid & weevil control",                 "Seed treatment 5 ml/kg seed"],
+                  ["Carbendazim",        "Rust & wilt fungicide",                  "Spray 1 g/L at vegetative stage"],
+                  ["Metribuzin",         "Weed control",                           "Apply 250 g/ha pre-emergence"]],
+
+  "pomegranate": [["Chlorpyrifos",       "Fruit borer & bark eating caterpillar",  "Spray 2.5 ml/L at fruit set"],
+                  ["Copper oxychloride", "Bacterial blight fungicide",             "Apply 3 g/L after pruning"],
+                  ["Hexaconazole",       "Cercospora fruit spot control",          "Spray 2 ml/L at fortnightly intervals"]],
+
+  "banana":      [["Carbofuran",         "Nematode & weevil control",              "Apply 40 g/plant in soil"],
+                  ["Propiconazole",      "Sigatoka leaf spot fungicide",           "Spray 1 ml/L every 3 weeks"],
+                  ["Glyphosate",         "Weed control between rows",              "Apply 1.5 L/ha carefully avoiding crop"]],
+
+  "mango":       [["Dimethoate",         "Mango hopper & mealybug control",        "Spray 2 ml/L at panicle emergence"],
+                  ["Carbendazim",        "Powdery mildew & anthracnose",           "Apply 1 g/L at flowering"],
+                  ["Copper hydroxide",   "Bacterial canker control",               "Spray 3 g/L after pruning"]],
+
+  "grapes":      [["Metalaxyl",          "Downy mildew fungicide",                 "Spray 2 g/L at bud burst"],
+                  ["Sulfur",             "Powdery mildew control",                 "Apply 3 g/L every 10 days"],
+                  ["Imidacloprid",       "Thrips & mealybug control",              "Spray 0.5 ml/L at berry set"]],
+
+  "watermelon":  [["Dinotefuran",        "Aphid & whitefly control",               "Spray 0.5 g/L at vegetative stage"],
+                  ["Chlorothalonil",     "Downy mildew & gummy stem blight",       "Apply 2 g/L every 7 days"],
+                  ["Pendimethalin",      "Weed control",                           "Apply 1 L/ha pre-emergence"]],
+
+  "muskmelon":   [["Acetamiprid",        "Aphid & whitefly control",               "Spray 0.2 g/L at early infestation"],
+                  ["Mancozeb",           "Powdery mildew fungicide",               "Apply 2.5 g/L every 10 days"],
+                  ["Oxyfluorfen",        "Weed control",                           "Apply 1 L/ha pre-emergence"]],
+
+  "apple":       [["Captan",             "Scab & fruit rot fungicide",             "Spray 2.5 g/L from pink bud stage"],
+                  ["Chlorpyrifos",       "Codling moth & aphid control",           "Apply 2.5 ml/L at petal fall"],
+                  ["Glyphosate",         "Orchard floor weed control",             "Apply 1.5 L/ha avoiding foliage"]],
+
+  "orange":      [["Copper oxychloride", "Citrus canker fungicide",                "Spray 3 g/L after pruning"],
+                  ["Dimethoate",         "Citrus psylla & leaf miner control",     "Apply 2 ml/L at new flush"],
+                  ["Glyphosate",         "Weed control in orchard",                "Apply 1.5 L/ha between rows"]],
+
+  "papaya":      [["Imidacloprid",       "Mealybug & aphid control",               "Spray 0.5 ml/L at vegetative stage"],
+                  ["Mancozeb",           "Powdery mildew & anthracnose",           "Apply 2.5 g/L every 10 days"],
+                  ["Carbendazim",        "Damping-off & collar rot control",       "Drench 1 g/L near root zone"]],
+
+  "coconut":     [["Chlorpyrifos",       "Rhinoceros beetle control",              "Apply 5 g in crown region"],
+                  ["Bordeaux mixture",   "Bud rot & leaf blight fungicide",        "Spray 1% solution on crown"],
+                  ["Glyphosate",         "Weed control in plantation",             "Apply 1.5 L/ha between palms"]],
+
+  "cotton":      [["Spinosad",           "Bollworm & thrips control",              "Spray 1 ml/L at boll formation"],
+                  ["Trifluralin",        "Pre-emergence weed control",             "Apply 1 L/ha before sowing"],
+                  ["Propiconazole",      "Alternaria leaf spot fungicide",         "Spray 1 ml/L at first sign"]],
+
+  "jute":        [["Malathion",          "Jute semilooper & hairy caterpillar",    "Spray 2 ml/L at vegetative stage"],
+                  ["Carbendazim",        "Stem rot & root rot fungicide",          "Apply 1 g/L at early stage"],
+                  ["Quizalofop",         "Grass weed control",                     "Apply 1 L/ha post-emergence"]],
+
+  "coffee":      [["Chlorpyrifos",       "White stem borer control",               "Spray 2.5 ml/L on stem & branches"],
+                  ["Copper oxychloride", "Coffee leaf rust fungicide",             "Apply 3 g/L every 3 weeks"],
+                  ["Glyphosate",         "Weed control in plantation",             "Apply 1.5 L/ha between rows"]]
+}

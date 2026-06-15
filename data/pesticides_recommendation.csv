@@ -1,0 +1,66 @@
+crop,pest_disease,pesticide,dosage,application_method,notes
+rice,stem borer,Chlorantraniliprole,150 ml/acre,Spray,Apply as a soil drench or foliar spray depending on formulation.
+rice,leaf folder,Cartap Hydrochloride,500 g/acre,Spray,Spray in the evening and avoid irrigation for 24 hours.
+wheat,aphids,Imidacloprid,100 ml/acre,Spray,Treat at first sign of infestation and monitor weekly.
+wheat,rust,Propiconazole,200 ml/acre,Foliar spray,Use at first symptoms and repeat after 7-10 days.
+maize,fall armyworm,Spinetoram,120 ml/acre,Spray,Spray when larvae are small for best control.
+maize,stem borer,Carbofuran,1 kg/acre,Soil application,Apply as a soil drench or foliar spray depending on formulation.
+cotton,bollworm,Emamectin Benzoate,80 g/acre,Spray,Target young larvae and avoid spraying in heat of day.
+cotton,whitefly,Thiamethoxam,100 ml/acre,Spray,Apply early morning or late evening for best coverage.
+sugarcane,early shoot borer,Chlorpyrifos,2 L/acre,Soil drenching,Apply at the base of the stalk and repeat if necessary.
+sugarcane,top rot,Carbendazim,1 g/L water,Spray,Ensure good spray coverage on affected tissue.
+tomato,fruit borer,Spinosad,60 ml/acre,Spray,Spray at first sign of damage and cover the canopy well.
+tomato,leaf curl virus,Imidacloprid,0.3 ml/L water,Spray,Use on the lower leaves; combine with cultural control.
+potato,late blight,Mancozeb,2 g/L water,Spray,Apply under humid conditions and reapply after rain.
+potato,early blight,Chlorothalonil,2 g/L water,Spray,Apply early and repeat after 7-10 days as needed.
+onion,thrips,Fipronil,1 ml/L water,Spray,Apply with good coverage; inspect plants after 5 days.
+onion,downy mildew,Metalaxyl,2 g/L water,Spray,Treat at first symptoms and under humid weather.
+chickpea,pod borer,Indoxacarb,100 ml/acre,Spray,Spray at blossom stage and target pods directly.
+chickpea,wilt,Trichoderma viride,5 g/kg seed,Seed treatment,Use as seed treatment or soil drench before planting.
+banana,panama disease,Carbendazim,2 g/L water,Soil drenching,Apply to soil and avoid waterlogging.
+banana,aphids,Dimethoate,1 ml/L water,Spray,Treat at first sign of infestation and monitor weekly.
+kidneybeans,aphid,Imidacloprid,100 ml/acre,Spray,Follow label directions closely and reapply only as needed.
+kidneybeans,root rot,Carbendazim,2 g/L water,Seed treatment,Use a soil drench or seed treatment for root protection.
+pigeonpeas,pod borer,Indoxacarb,100 ml/acre,Spray,Spray at blossom stage and target pods directly.
+pigeonpeas,wilt,Fosetyl-Al,2 g/L water,Spray,Use as seed treatment or soil drench before planting.
+mothbeans,aphid,Thiamethoxam,50 g/acre,Spray,Follow label directions closely and reapply only as needed.
+mothbeans,powdery mildew,Sulfur,2 kg/acre,Dusting,Dust or spray before heavy infection develops.
+mungbean,whitefly,Imidacloprid,100 ml/acre,Spray,Apply early morning or late evening for best coverage.
+mungbean,yellow mosaic virus,Imidacloprid,0.5 ml/L water,Spray,Apply protectively to manage whitefly vectors.
+blackgram,aphid,Acetamiprid,100 ml/acre,Spray,Follow label directions closely and reapply only as needed.
+blackgram,leaf spot,Mancozeb,2 g/L water,Spray,Follow label directions closely and reapply only as needed.
+lentil,aphid,Imidacloprid,100 ml/acre,Spray,Follow label directions closely and reapply only as needed.
+lentil,rust,Propiconazole,200 ml/acre,Foliar spray,Use at first symptoms and repeat after 7-10 days.
+pomegranate,fruit borer,Chlorpyrifos,2 ml/L water,Spray,Spray at first sign of damage and cover the canopy well.
+pomegranate,bacterial blight,Copper oxychloride,3 g/L water,Spray,Spray at the first water-soaked lesions and avoid overhead irrigation.
+mango,fruit fly,Malathion,2 ml/L water,Spray,Apply around fruit clusters and repeat after rain.
+mango,powdery mildew,Sulfur,2 kg/acre,Dusting,Dust or spray before heavy infection develops.
+grapes,downy mildew,Metalaxyl,2 g/L water,Spray,Treat at first symptoms and under humid weather.
+grapes,powdery mildew,Sulfur,2 kg/acre,Dusting,Dust or spray before heavy infection develops.
+jute,stem rot,Carbendazim,2 g/L water,Spray,Use as soil drench or foliar spray depending on product directions.
+jute,semilooper,Spinosad,60 ml/acre,Spray,Spray when larvae are small and avoid sunny hours.
+jute,root rot,Metalaxyl,2 g/L water,Seed treatment,Use a soil drench or seed treatment for root protection.
+rice,bacterial blight,Copper oxychloride,3 g/L water,Spray,Spray at the first water-soaked lesions and avoid overhead irrigation.
+wheat,powdery mildew,Sulfur,2 kg/acre,Dusting,Dust or spray before heavy infection develops.
+maize,maize borer,Emamectin Benzoate,75 g/acre,Spray,Apply on whorl and lower leaves for contact control.
+cotton,mealybug,Imidacloprid,100 ml/acre,Spray,Spray ensuring good wetting of the undersides of leaves.
+sugarcane,red rot,Propiconazole,2 g/L water,Spray,Apply preventively and maintain good field drainage.
+tomato,early blight,Mancozeb,2 g/L water,Spray,Apply early and repeat after 7-10 days as needed.
+potato,Colorado potato beetle,Cartap Hydrochloride,500 g/acre,Spray,Follow label directions closely and reapply only as needed.
+onion,purple blotch,Mancozeb,2 g/L water,Spray,Treat under favorable conditions and avoid excessive nitrogen.
+chickpea,pod fly,Thiamethoxam,100 ml/acre,Spray,Spray during pod formation and ensure full canopy coverage.
+banana,spider mites,Abamectin,100 ml/acre,Spray,Apply in the cool hours and repeat if infestation persists.
+blackgram,powdery mildew,Sulfur,2 kg/acre,Dusting,Dust or spray before heavy infection develops.
+grapes,anthracnose,Carbendazim,2 g/L water,Spray,Apply preventively and remove infected plant material.
+jute,hairy caterpillar,Emamectin Benzoate,60 g/acre,Spray,Apply with good coverage on foliage and repeat if necessary.
+kidneybeans,stem rot,Carbendazim,2 g/L water,Spray,Use as soil drench or foliar spray depending on product directions.
+lentil,seed rot,Metalaxyl,2 g/L water,Seed treatment,Treat seeds before planting to prevent early infection.
+mothbeans,damping off,Trichoderma viride,5 g/kg seed,Seed treatment,Apply as seed treatment or soil application before sowing.
+mungbean,powdery mildew,Sulfur,2 kg/acre,Dusting,Dust or spray before heavy infection develops.
+pigeonpeas,pod fly,Thiamethoxam,100 ml/acre,Spray,Spray during pod formation and ensure full canopy coverage.
+pomegranate,powdery mildew,Sulfur,2 kg/acre,Dusting,Dust or spray before heavy infection develops.
+mango,mango hopper,Imidacloprid,100 ml/acre,Spray,Follow label directions closely and reapply only as needed.
+papaya,fruit fly,Malathion,2 ml/L water,Spray,Apply around fruit clusters and repeat after rain.
+papaya,anthracnose,Carbendazim,2 g/L water,Spray,Apply preventively and remove infected plant material.
+papaya,root rot,Metalaxyl,2 g/L water,Soil drenching,Apply as a soil drench and avoid waterlogging.
+

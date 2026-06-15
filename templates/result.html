@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crop Recommendation Result</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-d0eH3Z7fQtJ1z6aAye4n+ooK1J9r+bG2Pk4+VL7YH4T2D6/a5ozeVqZfMWaVVY6t" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-MaB+7QJ5okv1Vh/1Uw+a/3T0Lj1un3KzLvZbZmye1ufnBi3GnW5TxmH6Vjz7zGGp9YtW1gOKKT9Nf6V0VlH5hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=2"/>
+</head>
+<body>
+
+  <div class="bg-overlay"></div>
+
+  <div class="page-wrapper container py-5">
+
+    <header class="header text-center mb-4">
+      <div class="logo">🌾 CropSense</div>
+      <p class="tagline">Prediction result for your soil sample</p>
+    </header>
+
+    <main class="card">
+      <div class="result-header d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+        <div class="result-header-copy">
+          <span class="badge rounded-pill bg-success-soft text-success">Recommended Crop</span>
+          <h1 class="result-title mt-3">{{ crop_details.display_crop }}</h1>
+          <p class="result-description">{{ crop_details.description }}</p>
+        </div>
+        <div class="result-header-action text-end">
+          <a href="{{ url_for('index') }}" class="predict-btn result-action-btn">Try another sample</a>
+        </div>
+      </div>
+
+      <div class="info-pill d-flex flex-wrap gap-2 mb-4">
+        <span><i class="fa-solid fa-cloud-sun"></i> {{ crop_details.temperature_range }}</span>
+        <span><i class="fa-solid fa-droplet"></i> {{ crop_details.humidity_range }}</span>
+        <span><i class="fa-solid fa-water"></i> {{ crop_details.rainfall_range }}</span>
+      </div>
+
+      <div class="detail-grid">
+        <div class="detail-col">
+          <div class="detail-card">
+            <h3>Soil & Environmental Requirements</h3>
+            <div class="detail-item"><strong>Ideal NPK</strong><span>{{ crop_details.soil_npk.N }} / {{ crop_details.soil_npk.P }} / {{ crop_details.soil_npk.K }} mg/kg</span></div>
+            <div class="detail-item"><strong>pH Range</strong><span>{{ crop_details.ph_range }}</span></div>
+            <div class="detail-item"><strong>Temperature</strong><span>{{ crop_details.temperature_range }}</span></div>
+            <div class="detail-item"><strong>Humidity</strong><span>{{ crop_details.humidity_range }}</span></div>
+            <div class="detail-item"><strong>Rainfall</strong><span>{{ crop_details.rainfall_range }}</span></div>
+
+            <div class="progress-block mt-3">
+              <label class="progress-label">Soil Suitability</label>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-n" role="progressbar" style="width: {{ soil_progress.N }}%;" aria-valuenow="{{ soil_progress.N }}" aria-valuemin="0" aria-valuemax="100">N {{ soil_progress.N }}%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-p" role="progressbar" style="width: {{ soil_progress.P }}%;" aria-valuenow="{{ soil_progress.P }}" aria-valuemin="0" aria-valuemax="100">P {{ soil_progress.P }}%</div>
+              </div>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-k" role="progressbar" style="width: {{ soil_progress.K }}%;" aria-valuenow="{{ soil_progress.K }}" aria-valuemin="0" aria-valuemax="100">K {{ soil_progress.K }}%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-col">
+          <div class="detail-card">
+            <h3>Growth Information</h3>
+            <div class="detail-item"><strong>Growth Duration</strong><span>{{ crop_details.growth_days }} days</span></div>
+            <div class="detail-item"><strong>Best Season</strong><span>{{ crop_details.season }}</span></div>
+            <div class="detail-item"><strong>Harvest Time</strong><span>{{ crop_details.harvest_time }}</span></div>
+            <div class="detail-item"><strong>Fertilizer Suggestion</strong><span>{{ crop_details.fertilizer_suggestion }}</span></div>
+            <div class="detail-item"><strong>Market Demand</strong><span>{{ crop_details.market_demand }}</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pesticide-card mt-4">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-3">
+          <div>
+            <h3>Pesticide Recommendations</h3>
+            <p class="text-muted small mb-0">Applied pest and disease protection for {{ crop_details.display_crop }}.</p>
+          </div>
+          <span class="badge bg-warning text-dark">{{ pesticides|length }} items</span>
+        </div>
+
+        {% if pesticides and pesticides|length > 0 %}
+        <div class="table-responsive">
+          <table class="table table-dark table-borderless align-middle mb-0">
+            <thead>
+              <tr>
+                <th>Pest / Disease</th>
+                <th>Pesticide</th>
+                <th>Dosage</th>
+                <th>Application</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in pesticides %}
+              <tr>
+                <td>{{ item.pest_disease }}</td>
+                <td>{{ item.pesticide }}</td>
+                <td>{{ item.dosage }}</td>
+                <td>{{ item.application_method }}</td>
+                <td>{{ item.notes }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% else %}
+        <p class="text-muted mb-0">No pesticide recommendations available for this crop yet.</p>
+        {% endif %}
+      </div>
+    </main>
+
+    <footer class="footer mt-4">
+      <p>Powered by Logistic Regression · Trained on 2200+ soil samples</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
